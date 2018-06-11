@@ -1,0 +1,70 @@
+.wp-ext-patent {
+	table.patents {
+		word-break: normal;
+		th {
+			text-align: center;
+		}
+		td {
+			&:last-child {
+				text-align: center;
+			}
+		}
+		th {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+	}
+	.patent-content {
+		margin-bottom: 4rem;
+		section {
+			margin-top: 4rem;
+			h4 {
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			.field {
+				display: grid;
+				font-size: 1.4rem;
+				padding: .5rem 0;
+				grid-gap: 0 1rem;
+				grid-template-columns: 25rem 1fr;
+				&:first-child {
+					padding-top: 0;
+				}
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+		.patent-info,
+		.patent-possessor,
+		.patent-author {
+			&-content {
+				background: hsl(0, 0%, 96%);
+				border-radius: .4rem;
+				padding: 2rem;
+			}
+			.field {
+				&-label {
+					text-transform: uppercase;
+				}
+			}
+		}
+		.patent-author {
+			.fields {
+				.field {
+					display: inline-block;
+					margin-right: 1rem;
+					.field-label,
+					.field-value {
+						display: inline-block;
+					}
+					.field-value {
+						margin-left: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
