@@ -19,7 +19,7 @@
 
 /**
  * Loading `WP_EXT_Patent`.
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 
 function run_wp_ext_patent() {
 	require_once( plugin_dir_path( __FILE__ ) . 'includes/WP_EXT_Patent.class.php' );
